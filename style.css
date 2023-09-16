@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 10px 5%;
+}
+.container .logo span{
+    color: #ff004f;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 210px;
+    font-size: 28px;
+}
+nav ul{
+    
+    position: sticky;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.img{
+    float: right;
+    width: 50vw;
+    height: 84vh;
+    margin-top: 4%;
+    border-bottom: 4px solid #ff004f;
+}
+.header_text{
+    margin-top: 15%;
+    font-size: 20px;
+}
+.header_text h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.header_text h4{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.header_text h1{
+    font-size: 50px;
+}
+.header_text h4 span{
+    color: #ff004f;
+}
+.header_text h1 span{
+    color: #ff004f;
+}
+.header_text h2 span.flag_up{
+    color: #FF671F;
+}
+.header_text h2 span.flag_down{
+    color: #046A38;
+}
+
+/* ----------about------------ */
+
+#about{
+    margin: 3% 3%;
+}
+.about_title{
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+}
+.sub_titles{
+    display: flex;
+    margin-left: 35px;
+}
+.sub_titles p{
+    width: 140px;
+    margin: 10% 11% 3%;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+.sub_titles p i{
+    margin-left: 8px;
+}
+.sub_titles p::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.sub_titles p::after{
+    width: 35%;
+}
+.tab_contents{
+    display: flex;
+}
+.tab_contents ul{
+    margin-right: 20px;
+    background: #262626;
+    border-radius: 8px;
+    transition: background 0.5s,transform 0.5s;
+}
+.tab_contents ul li{
+    width: 30vw;
+    height: 5vh;
+    line-height: 5vh;
+    margin: 8px 0;
+    text-align: center;
+    list-style: none;;
+}
+.content ul:hover{
+    background: rgb(86, 86, 86);
+    border-bottom: 2px solid #ff004f;
+    transform: translateY(-10px);
+}
+
+/* -------------------project----------------- */
+
+#project{
+    margin: 3% 3%;
+}
+.project_title{    
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+}
